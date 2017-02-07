@@ -22,8 +22,13 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  */
+<<<<<<< HEAD
 import $        from 'jquery';
 import Tether   from 'tether';
+=======
+import $ from 'expose?$!expose?jQuery!jquery';
+import 'expose?Tether!tether';
+>>>>>>> 84ca05fcb0bb33f1cf36c25c1ef4c23a1949fbb7
 import 'bootstrap/dist/js/bootstrap.min';
 import 'flexibility';
 import 'bootstrap-touchspin';
@@ -36,6 +41,7 @@ import './listing';
 import './product';
 import './cart';
 
+<<<<<<< HEAD
 import DropDown             from './components/drop-down';
 import Form                 from './components/form';
 import ProductMinitature    from './components/product-miniature';
@@ -44,6 +50,16 @@ import TopMenu              from './components/top-menu';
 
 import prestashop           from 'prestashop';
 import EventEmitter         from 'events';
+=======
+import DropDown from './components/drop-down';
+import Form from './components/form';
+import ProductMinitature from './components/product-miniature';
+import ProductSelect from './components/product-select';
+import TopMenu from './components/top-menu';
+
+import prestashop from 'prestashop';
+import EventEmitter from 'events';
+>>>>>>> 84ca05fcb0bb33f1cf36c25c1ef4c23a1949fbb7
 
 import './lib/bootstrap-filestyle.min';
 import './lib/jquery.scrollbox.min';
@@ -55,6 +71,7 @@ for (var i in EventEmitter.prototype) {
   prestashop[i] = EventEmitter.prototype[i];
 }
 
+<<<<<<< HEAD
 //$(document).ready(() => {
 //  let dropDownEl = $('.js-dropdown');
 //  const form = new Form();
@@ -69,3 +86,19 @@ for (var i in EventEmitter.prototype) {
 //  productMinitature.init();
 //  productSelect.init();
 //});
+=======
+$(document).ready(() => {
+  let dropDownEl = $('.js-dropdown');
+  const form = new Form();
+  let topMenuEl = $('.js-top-menu ul[data-depth="0"]');
+  let dropDown = new DropDown(dropDownEl);
+  let topMenu = new TopMenu(topMenuEl);
+  let productMinitature = new ProductMinitature();
+  let productSelect  = new ProductSelect();
+  dropDown.init();
+  form.init();
+  topMenu.init();
+  productMinitature.init();
+  productSelect.init();
+});
+>>>>>>> 84ca05fcb0bb33f1cf36c25c1ef4c23a1949fbb7
