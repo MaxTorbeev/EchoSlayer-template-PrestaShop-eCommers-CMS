@@ -4,10 +4,6 @@ var webpack             = require('webpack'),
 
 var plugins             = [];
 
-var production          = false;
-
-const IS_DEV = true;
-
 module.exports = {
 
     entry: [
@@ -75,17 +71,17 @@ module.exports.plugins = (module.exports.plugins || []).concat([
 ]);
 
 
-//if (process.env.NODE_ENV === 'production'){
-//    module.exports.plugins.push(
-//
-//        new webpack.optimize.UglifyJsPlugin({
-//
-//            sourcemap: true,
-//
-//            compress: {
-//                warnings: false
-//            }
-//        })
-//
-//    )
-//}
+if (process.env.NODE_ENV === 'production'){
+    module.exports.plugins.push(
+
+        new webpack.optimize.UglifyJsPlugin({
+
+            sourcemap: true,
+
+            compress: {
+                warnings: false
+            }
+        })
+
+    )
+}

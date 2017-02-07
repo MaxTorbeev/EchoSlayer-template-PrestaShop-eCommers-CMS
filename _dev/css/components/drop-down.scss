@@ -1,13 +1,14 @@
 .dropdown{
-  color:$gray;
+  color: $gray;
+
   &:hover .expand-more{
     color: $brand-primary;
   }
+
   .expand-more{
     color: $gray-darker;
     cursor: pointer;
     @include user-select(none);
-
   }
 
   .active{
