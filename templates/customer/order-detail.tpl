@@ -145,7 +145,7 @@
     </div>
   {/block}
 
-  {$HOOK_DISPLAYORDERDETAIL nofilter}
+  {$HOOK_DISPLAYORDERDETAIL}
 
   {block name='order_detail'}
     {if $order.details.is_returnable}

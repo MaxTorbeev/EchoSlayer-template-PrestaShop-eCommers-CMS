@@ -29,7 +29,17 @@ module.exports = {
                 })
             },
             {
+                test: /.(png|woff(2)?|eot|ttf|svg)(\?[a-z0-9=\.]+)?$/,
+
+                loader: 'file-loader',
+                options: {
+                    name: '../fonts/[name].[ext]?[hash]',
+                    publicPath: '/'
+                }
+            },
+            {
                 test: /\.css$/,
+                
                 use: [
                     'style-loader',
                     {
@@ -66,7 +76,8 @@ module.exports.plugins = (module.exports.plugins || []).concat([
             jQuery          : 'jquery',
             $               : 'jquery',
             jquery          : 'jquery',
-            'window.jQuery' : 'jquery'
+            'window.jQuery' : 'jquery',
+            'window.Tether' : 'tether'
         })
 ]);
 

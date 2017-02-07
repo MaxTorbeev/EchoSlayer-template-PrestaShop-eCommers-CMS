@@ -1,10 +1,11 @@
-@import "~bourbon/core/bourbon";
+//@import "~bourbon/core/bourbon";
 @import "partials/_variables";
 @import "~bootstrap/scss/bootstrap";
 @import "~bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css";
 @import "partials/_mixins";
-//@import "partials/_fonts";
+@import "partials/_fonts";
 @import "partials/_commons";
+
 //@import "components/drop-down";
 //@import "components/search-widget";
 //@import "components/mainmenu";

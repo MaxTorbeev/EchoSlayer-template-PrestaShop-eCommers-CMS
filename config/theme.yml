@@ -58,7 +58,6 @@ global_settings:
       height: 125
       scope: [products]
 
-
 theme_settings:
   default_layout: layout-full-width
   layouts:

@@ -26,16 +26,18 @@
         ]
       }
     </p>
-    {if !isset($empty_cart_on_logout) || $empty_cart_on_logout}
-      <p><small>{l s='If you sign out now, your cart will be emptied.' d='Shop.Theme.Checkout'}</small></p>
-    {/if}
+    <p><small>{l s='If you sign out now, your cart will be emptied.' d='Shop.Theme.Checkout'}</small></p>
 
   {else}
 
     <ul class="nav nav-inline m-y-2">
       <li class="nav-item">
         <a class="nav-link {if !$show_login_form}active{/if}" data-toggle="tab" href="#checkout-guest-form" role="tab">
-          {l s='Order as a guest' d='Shop.Theme.Checkout'}
+          {if $guest_allowed}
+            {l s='Order as a guest' d='Shop.Theme.Checkout'}
+          {else}
+            {l s='Create an account' d='Shop.Theme.CustomerAccount'}
+          {/if}
         </a>
       </li>
 

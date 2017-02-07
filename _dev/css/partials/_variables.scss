@@ -4,6 +4,15 @@
 //
 // Variable format should follow the `$component-modifier-state-property` order.
 
+@import "colors/blue-light";
+@import "colors/cyan";
+@import "colors/gray";
+@import "colors/gray-blue";
+@import "colors/green";
+@import "colors/orange";
+@import "colors/red";
+@import "colors/yellow";
+@import "colors/social-networks";
 
 // Colors
 //
@@ -127,8 +136,8 @@ $grid-breakpoints: (
         lg: 992px,
         xl: 1200px
 ) !default;
-@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
-@include _assert-starts-at-zero($grid-breakpoints);
+//@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+//@include _assert-starts-at-zero($grid-breakpoints);
 
 
 // Grid containers
@@ -141,7 +150,8 @@ $container-max-widths: (
         lg: 1200px,
         xl: 1440px
 ) !default;
-@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+//@include _assert-ascending($container-max-widths, "$container-max-widths");
 
 
 // Grid columns
