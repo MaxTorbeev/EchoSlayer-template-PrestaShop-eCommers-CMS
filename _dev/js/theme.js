@@ -1,9 +1,11 @@
 window.$ = require('jquery');
-// window.Tether  = require('tether');
+window.tether = require('tether');
 
-import Tether from 'tether';
+// Import bootstrap components
+// import Tooltip  from 'bootstrap/js/src/tooltip';
+import 'bootstrap/js/src/modal';
 
-import 'bootstrap/js/dist/modal';
+
 import 'flexibility';
 import 'bootstrap-touchspin';
 
@@ -37,19 +39,19 @@ for (var i in EventEmitter.prototype) {
 
 $(document).ready(() => {
 
-    $('#myModal').modal();
-    //
-    //
-    // let dropDownEl = $('.js-dropdown');
-    // const form = new Form();
-    // let topMenuEl = $('.js-top-menu ul[data-depth="0"]');
-    // let dropDown = new DropDown(dropDownEl);
-    // let topMenu = new TopMenu(topMenuEl);
-    // let productMinitature = new ProductMinitature();
-    // let productSelect = new ProductSelect();
-    // dropDown.init();
-    // form.init();
-    // topMenu.init();
-    // productMinitature.init();
-    // productSelect.init();
+
+    const form = new Form();
+
+    let dropDownEl              = $('.js-dropdown'),
+        topMenuEl               = $('.js-top-menu ul[data-depth="0"]'),
+        dropDown                = new DropDown(dropDownEl),
+        topMenu                 = new TopMenu(topMenuEl),
+        productMinitature       = new ProductMinitature(),
+        productSelect           = new ProductSelect();
+
+    dropDown.init();
+    form.init();
+    topMenu.init();
+    productMinitature.init();
+    productSelect.init();
 });
