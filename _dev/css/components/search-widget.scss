@@ -1,6 +1,6 @@
 .search-widget {
   float: right;
-  @include search-box;
+  //@include search-box;
 }
 .header-top {
   .search-widget {
@@ -31,7 +31,7 @@
   .header-top {
     .search-widget {
       float: none;
-      padding: 0 rem(15px);
+      padding: 0 1rem;
       form {
         margin: 0 auto;
         input[type="text"] {

@@ -40,12 +40,18 @@ $gray-lightest:             #f7f7f9 !default;
 
 // Reassign color vars to semantic color scheme
 $brand-primary:             $blue !default;
+
+$brand-secondary:           $purple !default;
+
 $brand-success:             $green !default;
 $brand-info:                $teal !default;
 $brand-warning:             $orange !default;
 $brand-danger:              $red !default;
 $brand-inverse:             $gray-dark !default;
 
+$small-space:               10px !default;
+$medium-space:              20px !default;
+$large-space:               30px !default;
 
 // Options
 //
