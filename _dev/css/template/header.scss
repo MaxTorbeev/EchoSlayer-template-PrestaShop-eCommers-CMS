@@ -1,0 +1,24 @@
+#header {
+    color: $gray;
+
+    .logo {
+max-width: 100%;
+}
+
+a {
+    color: $white;
+
+    &:hover {
+        text-decoration: none;
+        color: $brand-primary;
+    }
+}
+
+.header_nav{
+    background: $gray-blue_80;
+
+    .user-info{
+        float: right;
+    }
+}
+}

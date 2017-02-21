@@ -1,5 +1,6 @@
 window.$ = require('jquery');
 window.tether = require('tether');
+require('jquery-ui-bundle');
 
 // Import bootstrap components
 // import Tooltip  from 'bootstrap/js/src/tooltip';
@@ -16,6 +17,8 @@ import './customer';
 import './listing';
 import './product';
 import './cart';
+
+
 
 import DropDown             from './components/drop-down';
 import Form                 from './components/form';
@@ -39,7 +42,6 @@ for (var i in EventEmitter.prototype) {
 
 $(document).ready(() => {
 
-
     const form = new Form();
 
     let dropDownEl              = $('.js-dropdown'),
@@ -54,4 +56,5 @@ $(document).ready(() => {
     topMenu.init();
     productMinitature.init();
     productSelect.init();
+
 });

@@ -1,3 +1,4 @@
+{*Навигатор в самом верху страницы*}
 {block name='header_nav'}
     <nav class="header_nav">
         <div class="container">
@@ -5,7 +6,7 @@
                 <div class="col">
                     {hook h='displayNav1'}
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-sm-5 float-left">
                     {hook h='displayNav2'}
                 </div>
 
@@ -52,3 +53,5 @@
     </div>
     {hook h='displayNavFullWidth'}
 {/block}
+
+

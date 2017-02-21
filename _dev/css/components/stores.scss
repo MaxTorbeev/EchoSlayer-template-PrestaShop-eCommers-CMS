@@ -33,7 +33,7 @@
         }
       }
       .store-description{
-        font-size: $base-font-size;
+        font-size: $font-family-base;
       }
     }
     .store-item-footer {
@@ -50,7 +50,7 @@
       i.material-icons{
         margin-right: $small-space;
         color: $gray;
-        font-size: $base-font-size;
+        font-size: $font-family-base;
       }
       li{
         margin-bottom: $small-space;

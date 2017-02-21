@@ -77,7 +77,6 @@
         {/foreach}
 
       {elseif $field.type === 'checkbox'}
-
         <span class="custom-checkbox">
           <input name="{$field.name}" type="checkbox" value="1" {if $field.value}checked="checked"{/if} {if $field.required}required{/if}>
           <span><i class="material-icons checkbox-checked">&#xE5CA;</i></span>
