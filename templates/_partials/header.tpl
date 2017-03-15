@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    {hook h='displayNav1'}
+                    {*{hook h='displayNav1'}*}
                 </div>
                 <div class="col-12 col-sm-5 float-left">
                     {hook h='displayNav2'}
